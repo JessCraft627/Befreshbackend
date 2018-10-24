@@ -1,4 +1,4 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :name, :email, :subscription
+  attributes :id, :name, :email, :password, :subscription, :address, :city, :state, :zip, :card_number, :created_at
   has_many :orders
 end
